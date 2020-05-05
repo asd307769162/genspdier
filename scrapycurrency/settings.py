@@ -43,7 +43,7 @@ REDIRECT_ENABLED = False      # 关闭重定向：除非您对跟进重定向感
 
 AJAXCRAWL_ENABLED = True      # 启用 “Ajax Crawlable Pages” 爬取：
 
-LOG_LEVEL = "WARNING"
+# LOG_LEVEL = "WARNING"
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 
@@ -61,9 +61,9 @@ LOG_LEVEL = "WARNING"
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'scrapycurrency.middlewares.ScrapycurrencyDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   'scrapycurrency.middlewares.ScrapycurrencyDownloaderMiddleware': 543,
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
